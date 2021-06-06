@@ -1,0 +1,16 @@
+strict digraph "" {
+	graph [overlap=false];
+	"0_comment" -> "1_li temp_2, 2";
+	"1_li temp_2, 2" -> "2_mv temp_0, temp_2";
+	"2_mv temp_0, temp_2" -> "3_comment";
+	"3_comment" -> "4_li temp_3, 3";
+	"4_li temp_3, 3" -> "5_mv temp_1, temp_3";
+	"5_mv temp_1, temp_3" -> "6_comment";
+	"6_comment" -> "7_mv a0, temp_0";
+	"7_mv a0, temp_0" -> "8_call println_int";
+	"8_call println_int" -> "9_comment";
+	"9_comment" -> "10_mv a0, temp_1";
+	"10_mv a0, temp_1" -> "11_call println_int";
+	"11_call println_int" -> "12_comment";
+	"12_comment" -> "13_li a0, 0";
+}

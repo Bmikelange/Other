@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Coverage report</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.ba-throttle-debounce.min.js"></script>
+    <script type="text/javascript" src="jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="jquery.hotkeys.js"></script>
+    <script type="text/javascript" src="coverage_html.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(coverage.index_ready);
+    </script>
+</head>
+<body class="indexfile">
+<div id="header">
+    <div class="content">
+        <h1>Coverage report:
+            <span class="pc_cov">68%</span>
+        </h1>
+        <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
+        <form id="filter_container">
+            <input id="filter" type="text" value="" placeholder="filter..." />
+        </form>
+    </div>
+</div>
+<div class="help_panel">
+    <img id="panel_icon" src="keybd_open.png" alt="Hide keyboard shortcuts" />
+    <p class="legend">Hot-keys on this page</p>
+    <div>
+    <p class="keyhelp">
+        <span class="key">n</span>
+        <span class="key">s</span>
+        <span class="key">m</span>
+        <span class="key">x</span>
+        <span class="key">c</span> &nbsp; change column sorting
+    </p>
+    </div>
+</div>
+<div id="index">
+    <table class="index">
+        <thead>
+            <tr class="tablehead" title="Click to sort">
+                <th class="name left headerSortDown shortkey_n">Module</th>
+                <th class="shortkey_s">statements</th>
+                <th class="shortkey_m">missing</th>
+                <th class="shortkey_x">excluded</th>
+                <th class="right shortkey_c">coverage</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr class="total">
+                <td class="name left">Total</td>
+                <td>3323</td>
+                <td>1062</td>
+                <td>0</td>
+                <td class="right" data-ratio="2261 3323">68%</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr class="file">
+                <td class="name left"><a href="APIRiscV_py.html">APIRiscV.py</a></td>
+                <td>173</td>
+                <td>37</td>
+                <td>0</td>
+                <td class="right" data-ratio="136 173">79%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="Allocations_py.html">Allocations.py</a></td>
+                <td>190</td>
+                <td>59</td>
+                <td>0</td>
+                <td class="right" data-ratio="131 190">69%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="Instruction3A_py.html">Instruction3A.py</a></td>
+                <td>68</td>
+                <td>5</td>
+                <td>0</td>
+                <td class="right" data-ratio="63 68">93%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="LibGraphes_py.html">LibGraphes.py</a></td>
+                <td>133</td>
+                <td>71</td>
+                <td>0</td>
+                <td class="right" data-ratio="62 133">47%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="Main_py.html">Main.py</a></td>
+                <td>89</td>
+                <td>28</td>
+                <td>0</td>
+                <td class="right" data-ratio="61 89">69%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="MiniCCodeGen3AVisitor-correct_py.html">MiniCCodeGen3AVisitor-correct.py</a></td>
+                <td>212</td>
+                <td>212</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 212">0%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="MiniCCodeGen3AVisitor_py.html">MiniCCodeGen3AVisitor.py</a></td>
+                <td>221</td>
+                <td>36</td>
+                <td>0</td>
+                <td class="right" data-ratio="185 221">84%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="MiniCLexer_py.html">MiniCLexer.py</a></td>
+                <td>182</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="182 182">100%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="MiniCParser_py.html">MiniCParser.py</a></td>
+                <td>1475</td>
+                <td>364</td>
+                <td>0</td>
+                <td class="right" data-ratio="1111 1475">75%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="MiniCTypingVisitor_py.html">MiniCTypingVisitor.py</a></td>
+                <td>154</td>
+                <td>117</td>
+                <td>0</td>
+                <td class="right" data-ratio="37 154">24%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="MiniCVisitor_py.html">MiniCVisitor.py</a></td>
+                <td>76</td>
+                <td>33</td>
+                <td>0</td>
+                <td class="right" data-ratio="43 76">57%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="Operands_py.html">Operands.py</a></td>
+                <td>114</td>
+                <td>13</td>
+                <td>0</td>
+                <td class="right" data-ratio="101 114">89%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="test_codegen_py.html">test_codegen.py</a></td>
+                <td>141</td>
+                <td>50</td>
+                <td>0</td>
+                <td class="right" data-ratio="91 141">65%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="test_expect_pragma_py.html">test_expect_pragma.py</a></td>
+                <td>95</td>
+                <td>37</td>
+                <td>0</td>
+                <td class="right" data-ratio="58 95">61%</td>
+            </tr>
+        </tbody>
+    </table>
+    <p id="no_rows">
+        No items found using the specified filter.
+    </p>
+</div>
+<div id="footer">
+    <div class="content">
+        <p>
+            <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.0.3</a>,
+            created at 2020-01-24 14:38
+        </p>
+    </div>
+</div>
+</body>
+</html>

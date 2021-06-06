@@ -1,0 +1,9 @@
+// Conflict Graph
+digraph {
+	temp_0 [label=temp_0 color=red]
+	temp_1 [label=temp_1 color=red]
+	temp_2 [label=temp_2 color=red]
+	temp_3 [label=temp_3 color=red]
+	temp_0 -> temp_1 [dir=none]
+	temp_0 -> temp_3 [dir=none]
+}

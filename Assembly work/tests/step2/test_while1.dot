@@ -1,0 +1,26 @@
+strict digraph "" {
+	graph [overlap=false];
+	"0_comment" -> "1_li temp_1, 9";
+	"1_li temp_1, 9" -> "2_mv temp_0, temp_1";
+	"2_mv temp_0, temp_1" -> "3_comment";
+	"3_comment" -> "4_lbl_ltest1_0";
+	"4_lbl_ltest1_0" -> "5_li temp_2, 0";
+	"5_li temp_2, 0" -> "6_li temp_3, 0";
+	"6_li temp_3, 0" -> "7_ble temp_0, temp_2, lbl_endrl_2";
+	"7_ble temp_0, temp_2, lbl_endrl_2" -> "8_li temp_3, 1";
+	"7_ble temp_0, temp_2, lbl_endrl_2" -> "9_lbl_endrl_2";
+	"8_li temp_3, 1" -> "9_lbl_endrl_2";
+	"9_lbl_endrl_2" -> "10_beq temp_3, zero, lbl_lendwhile_1";
+	"10_beq temp_3, zero, lbl_lendwhile_1" -> "11_comment";
+	"10_beq temp_3, zero, lbl_lendwhile_1" -> "19_lbl_lendwhile_1";
+	"11_comment" -> "12_li temp_4, 1";
+	"12_li temp_4, 1" -> "13_sub temp_5, temp_0, temp_4";
+	"13_sub temp_5, temp_0, temp_4" -> "14_mv temp_0, temp_5";
+	"14_mv temp_0, temp_5" -> "15_comment";
+	"15_comment" -> "16_mv a0, temp_0";
+	"16_mv a0, temp_0" -> "17_call println_int";
+	"17_call println_int" -> "18_j lbl_ltest1_0";
+	"18_j lbl_ltest1_0" -> "4_lbl_ltest1_0";
+	"19_lbl_lendwhile_1" -> "20_comment";
+	"20_comment" -> "21_li a0, 0";
+}
